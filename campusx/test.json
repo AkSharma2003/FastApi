@@ -1,0 +1,92 @@
+{
+  "P001": {
+    "name": "Ankit Kumar Sharma",
+    "city": "Aurangabad",
+    "gender": "male",
+    "height": 1.40,
+    "weight": 45,
+    "bmi": 22.96,
+    "verdict": "Normal"
+  },
+  "P002": {
+    "name": "Rahul Kumar",
+    "city": "Patna",
+    "gender": "male",
+    "height": 1.72,
+    "weight": 68,
+    "bmi": 22.99,
+    "verdict": "Normal"
+  },
+  "P003": {
+    "name": "Priya Singh",
+    "city": "Gaya",
+    "gender": "female",
+    "height": 1.60,
+    "weight": 50,
+    "bmi": 19.53,
+    "verdict": "Underweight"
+  },
+  "P004": {
+    "name": "Aman Raj",
+    "city": "Muzaffarpur",
+    "gender": "male",
+    "height": 1.78,
+    "weight": 82,
+    "bmi": 25.88,
+    "verdict": "Overweight"
+  },
+  "P005": {
+    "name": "Neha Kumari",
+    "city": "Bhagalpur",
+    "gender": "female",
+    "height": 1.55,
+    "weight": 72,
+    "bmi": 29.97,
+    "verdict": "Obese"
+  },
+  "P006": {
+    "name": "Vikash Kumar",
+    "city": "Darbhanga",
+    "gender": "male",
+    "height": 1.82,
+    "weight": 76,
+    "bmi": 22.94,
+    "verdict": "Normal"
+  },
+  "P007": {
+    "name": "Sneha Sharma",
+    "city": "Nalanda",
+    "gender": "female",
+    "height": 1.68,
+    "weight": 60,
+    "bmi": 21.26,
+    "verdict": "Normal"
+  },
+  "P008": {
+    "name": "Rohit Verma",
+    "city": "Purnia",
+    "gender": "male",
+    "height": 1.65,
+    "weight": 48,
+    "bmi": 17.63,
+    "verdict": "Underweight"
+  },
+  "P009": {
+    "name": "Pooja Sinha",
+    "city": "Siwan",
+    "gender": "female",
+    "height": 1.58,
+    "weight": 66,
+    "bmi": 26.44,
+    "verdict": "Overweight"
+  },
+  "P010": {
+    "name": "Abhishek Mishra",
+    "city": "Ara",
+    "gender": "male",
+    "height": 1.75,
+    "weight": 95,
+    "bmi": 31.02,
+    "verdict": "Obese"
+  }
+}
