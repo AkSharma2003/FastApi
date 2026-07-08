@@ -3,7 +3,7 @@
     "name": "Ankit Kumar Sharma",
     "city": "Aurangabad",
     "gender": "male",
-    "height": 1.40,
+    "height": 1.4,
     "weight": 45,
     "bmi": 22.96,
     "verdict": "Normal"
@@ -21,7 +21,7 @@
     "name": "Priya Singh",
     "city": "Gaya",
     "gender": "female",
-    "height": 1.60,
+    "height": 1.6,
     "weight": 50,
     "bmi": 19.53,
     "verdict": "Underweight"
@@ -88,5 +88,14 @@
     "weight": 95,
     "bmi": 31.02,
     "verdict": "Obese"
+  },
+  "P011": {
+    "name": "miss Pai",
+    "city": "aurangabad",
+    "gender": "female",
+    "height": 1.5,
+    "weight": 45.0,
+    "bmi": 20.0,
+    "verdict": "normal"
   }
 }
