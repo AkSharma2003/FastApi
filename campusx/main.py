@@ -1,6 +1,6 @@
 from fastapi import FastAPI,HTTPException
 from pydantic import BaseModel,Field,computed_field
-from typing import Annotated,Literal
+from typing import Annotated,Literal,Optional
 import json
 from fastapi.responses import JSONResponse
 
@@ -57,3 +57,45 @@ def create_patient(patient:patient):
     return JSONResponse(status_code=200,content={"message":"data added successfully"})
     
 
+
+class patientUPdate(BaseModel):
+    id:Annotated[Optional[str],Field(default=None)]
+    name:Annotated[Optional[str],Field(default=None)]
+    city:Annotated[Optional[str],Field(default=None)]
+    gender:Annotated[Optional[Literal['male','female','other']],Field(default=None)]
+    height:Annotated[Optional[float],Field(default=None)]
+    weight:Annotated[Optional[float],Field(default=None)]
+    
+    
+@app.put('/edit/{patient_id}')
+def update_patient(patient_id:str,patient_update:patientUPdate):
+    data=load_data()
+    if patient_id not in data:
+        raise HTTPException(status_code=404,detail='patient id is not abalvele in the data set')        
+    existing_patient_info=data[patient_id]
+    updated_patient_info=patient_update.model_dump(exclude_unset=True)
+        
+    for key,value in updated_patient_info.items():
+        existing_patient_info[key]=value
+        
+    existing_patient_info['id']=patient_id # add id in the exiting data
+    pateint_pydentic_object=patient(**existing_patient_info) # convert pydantic object
+    existing_patient_info=pateint_pydentic_object.model_dump(exclude='id') # remove id from exiting data  & convert in to the dectionery
+        
+    data[patient_id]=existing_patient_info # update new data
+        
+    save_data(data) # save data
+        
+    return JSONResponse(status_code=200,content={'message':'data updated successfully'})    
+    
+@app.delete("/delete/{patient_id}")
+def delete_patient(patient_id:str):
+    data=load_data()
+    
+    if patient_id not in data:
+        raise HTTPException(status_code=404,detail='patient id is not abaiilble in the given data')
+    
+    del data[patient_id]
+    save_data(data)
+    
+    return JSONResponse(status_code=200,content={'message':'data deleted successfully'})

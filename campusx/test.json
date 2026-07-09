@@ -1,12 +1,12 @@
 {
   "P001": {
-    "name": "Ankit Kumar Sharma",
+    "name": "Matho",
     "city": "Aurangabad",
     "gender": "male",
     "height": 1.4,
-    "weight": 45,
+    "weight": 45.0,
     "bmi": 22.96,
-    "verdict": "Normal"
+    "verdict": "normal"
   },
   "P002": {
     "name": "Rahul Kumar",
@@ -25,15 +25,6 @@
     "weight": 50,
     "bmi": 19.53,
     "verdict": "Underweight"
-  },
-  "P004": {
-    "name": "Aman Raj",
-    "city": "Muzaffarpur",
-    "gender": "male",
-    "height": 1.78,
-    "weight": 82,
-    "bmi": 25.88,
-    "verdict": "Overweight"
   },
   "P005": {
     "name": "Neha Kumari",
@@ -91,11 +82,11 @@
   },
   "P011": {
     "name": "miss Pai",
-    "city": "aurangabad",
+    "city": "patna",
     "gender": "female",
-    "height": 1.5,
+    "height": 40.0,
     "weight": 45.0,
-    "bmi": 20.0,
-    "verdict": "normal"
+    "bmi": 0.03,
+    "verdict": "underweight"
   }
 }
